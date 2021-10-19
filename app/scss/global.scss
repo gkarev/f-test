@@ -2,4 +2,5 @@ body{
     background-color: $main-bg;
     color: $main-color;
     font-family: $main-font;
+    -webkit-tap-highlight-color: transparent;
 }

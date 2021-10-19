@@ -1,0 +1,25 @@
+.theme-block {
+    @include theme-block;
+    border-radius: $main-border-radius;
+}
+
+.theme-block__top {
+    padding: 27px $main-x-padding;
+    @include media($sm, max) {
+        padding: 16px $main-x-padding / 2;
+    }
+}
+
+.theme-block__bottom {
+    padding: 15px $main-x-padding 16px;
+    border-top: 1px solid $primary-border-color;
+    background-color: $secondary-bg;
+    border-radius: 0 0 $main-border-radius $main-border-radius;
+    @include media($sm, max) {
+        padding: 16px $main-x-padding / 2 16px;
+    }
+}
+
+.theme-block--offset{
+    margin-bottom: 24px;
+}

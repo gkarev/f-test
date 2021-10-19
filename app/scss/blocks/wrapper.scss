@@ -1,3 +1,6 @@
 .wrapper{
     padding-top: 53px;
+    @include media($md, max){
+        padding-top: $container-gutters;
+    }
 }
