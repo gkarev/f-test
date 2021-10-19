@@ -28,7 +28,7 @@
     position: absolute;
     top: calc(100% + 4px);
     left: 0;
-    border: 1px solid $primary-border-color;
+    @include theme-block;
     border-radius: $main-border-radius;
     transition: transform 0.2s ease;
     transform: translateY(10px);
@@ -36,6 +36,7 @@
     pointer-events: none;
     padding: 0;
     list-style-type: none;
+    z-index: 2;
 }
 
 .dropdown__head._active ~ .dropdown__body {
