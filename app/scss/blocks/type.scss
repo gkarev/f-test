@@ -1,0 +1,4 @@
+//main typography font scss
+.h1{
+    @include font(24px, 32px, 400);
+}

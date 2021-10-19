@@ -1,0 +1,20 @@
+.icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    > svg{
+        fill: currentColor;
+        stroke: currentColor;
+        flex-shrink: 0;
+    }
+}
+
+@for $i from 12 through 32 {
+    @if ($i % 2==0) {
+      .icon--#{$i} {
+        width: #{$i}px;
+        height: #{$i}px;
+      }
+    }
+  }

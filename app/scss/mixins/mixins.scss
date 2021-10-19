@@ -1,0 +1,53 @@
+@mixin media($size, $prefix: "max") {
+    @media (#{$prefix}-width: $size) {
+        @content;
+    }
+    @if $prefix == "min" {
+        @media (#{$prefix}-width: $size + .1px) {
+            @content;
+        }
+    }
+}
+
+// $fs - font-size; $lh - line-height; $fw - font-weight; $ff - font-family
+@mixin font($fs, $lh, $fw: null, $ff: $main-font) {
+    font: $fw #{$fs}/#{$lh} $ff;
+}
+
+@mixin theme-block($border-color: $primary-border-color, $shadow: $primary-shadow, $backround: $primary-bg) {
+    border: 1px solid $border-color;
+    box-shadow: $shadow;
+    background-color: $backround;
+}
+
+@mixin reset-btn {
+    border: 0;
+    background-color: transparent;
+    user-select: none;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    text-transform: none;
+    vertical-align: top;
+}
+
+@mixin placeholder {
+    &::-webkit-input-placeholder {
+        @content;
+    }
+    &:-moz-placeholder {
+        @content;
+    }
+    &::-moz-placeholder {
+        @content;
+    }
+    &:-ms-input-placeholder {
+        @content;
+    }
+}
+
+@mixin text-truncate{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

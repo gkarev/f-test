@@ -1,0 +1,40 @@
+
+.field{
+    position: relative;
+}
+
+.field__input{
+    height: 40px;
+    padding: 7px 12px;
+    @include font(16px, 24px);
+    border: 1px solid $input-border-color;
+    background-color: $input-bg;
+    border-radius: $input-border-radius;
+    transition: border-color .2s ease, background-color .2s ease;
+    width: 100%;
+    @include placeholder{
+        color: $input-placeholder-color;
+        opacity: 1;
+    }
+}
+
+.field__input--icon-left{
+    padding-left: 42px;
+}
+
+.field__button{
+    @include reset-btn;
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    height: 18px;
+    transform: translateY(-50%);
+}
+
+.field__button-icon{
+    color: $input-icon-color;
+}

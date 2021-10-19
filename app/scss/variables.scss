@@ -1,5 +1,42 @@
-//bacgrounds
-$body-bg: #ff55;
+$primary-bg: #FFFFFF;
+$main-bg: #F7F7F7;
+$main-active-bg: #F3F3F3;
+$brand-bg: #2EB670;
+$secondary-bg: #FAFAFA;
 
-//fonts
-$basic-family: 'Roboto', Arial, Helvetica, sans-serif;
+$main-color: #2F2F30;
+$brand-color: #2EB670;
+$secondary-color: #6C6D6F;
+$link-color: #6665DD;
+
+
+$main-border-color: #A9ABAE;
+$secondary-border-color: #D7D8DA;
+$primary-border-color: #DBDCDE;
+
+$primary-shadow-color: rgba(62, 63, 64, 0.1);
+$primary-shadow-size: 1px 3px 3px;
+$primary-shadow: $primary-shadow-size $primary-shadow-color;
+
+$main-font: 'Work Sans', Arial, Helvetica, sans-serif;
+$help-font: 'Source Code Pro', Arial, Helvetica, sans-serif;
+
+
+$container-width: 1256px;
+$container-gutters: 16px;
+
+$lg: 1200px;
+$md: 992px;
+$sm: 767px;
+$xs: 576px;
+
+$main-border-radius: 8px;
+
+$main-x-padding: 32px;
+
+$input-bg: $primary-bg;
+$input-color: $main-color;
+$input-border-radius: 6px;
+$input-border-color: $main-border-color;
+$input-icon-color: $secondary-color;
+$input-placeholder-color: $secondary-color;
