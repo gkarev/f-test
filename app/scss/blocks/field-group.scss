@@ -1,0 +1,58 @@
+.field-group{
+}
+
+.field-group__row{
+  margin-bottom: 24px;
+}
+
+.field-group__row--inline{
+  display: flex;
+  align-items: center;
+  @include media($md, max){
+    display: block;
+  }
+}
+
+.field-group__label{
+  @include font(16px, 24px);
+  @include text-truncate;
+  color: $main-color;
+  flex-shrink: 0;
+  display: block;
+  text-align: right;
+}
+
+.field-group__row--inline .field-group__label{
+  margin-right: 16px;
+  width: 124px;
+  @include media($md, max){
+    margin-right: 0;
+    margin-bottom: 8px;
+    width: 100%;
+    text-align: left
+  }
+}
+
+.field-group__field{
+  width: 100%;
+}
+
+.field-group__row--grid{
+  display: flex;
+  @include media($md, max){
+    flex-wrap: wrap;
+  }
+}
+
+
+.field-group__row--grid .field-group__field:first-of-type{
+  margin-right: $container-gutters;
+  @include media($md, max){
+    width: calc(100% - #{$container-gutters} - 80px);
+  }
+}
+
+.field-group__row--grid .field-group__field:last-of-type{
+  width: 80px;
+  flex-shrink: 0;
+}

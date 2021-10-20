@@ -221,13 +221,80 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    
-                    <div class="option card card--offset">
-                        <div class="option__top">
+                        <div class="option card card--offset">
+                            <div class="option__top">
+                                <div class="taber">
+                                    <div class="taber__head">
+                                        <ul class="taber__nav">
+                                            <li class="taber__nav-item">
+                                                <button type="button" class="taber__nav-btn _active">Behavior</button>
+                                            </li>
+                                            <li class="taber__nav-item">
+                                                <button type="button" class="taber__nav-btn">Appearance</button>
+                                            </li>
+                                            <li class="taber__nav-item">
+                                                <button type="button" class="taber__nav-btn">Custom Fields</button>
+                                            </li>
+                                            <li class="taber__nav-item">
+                                                <button type="button" class="taber__nav-btn">Questions</button>
+                                            </li>
+                                            <li class="taber__nav-item">
+                                                <button type="button" class="taber__nav-btn">URL Control</button>
+                                            </li>
+                                        </ul>
+                                    </div>
 
+                                    <div class="taber__body">
+                                        <div class="taber__content _active">
+                                            <form class="field-group" action="#">
+                                                <div class="field-group__row field-group__row--inline">
+                                                    <label class="field-group__label" for="select-id">Designation</label>
+                                                    <div class="field-group__field field">
+                                                        <svg class="field__icon field__icon--disabled field__icon--right icon icon--24">
+                                                            <use xlink:href="#arrow-down-24"/>
+                                                        </svg>
+                                                        <select class="field__input field__input--hide-control field__input--icon-right" id="select-id" name="some-name">
+                                                            <option selected value="Match Checkout Setting">Match Checkout Setting</option>
+                                                            <option value="Match Checkout Setting">Match Checkout Setting</option>
+                                                            <option value="Match Checkout Setting">Match Checkout Setting</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="field-group__row field-group__row--inline field-group__row--grid">
+                                                    <label class="field-group__label" for="input-goal-id">Goal</label>
+                                                    <div class="field-group__field field">
+                                                        <input id="input-goal-id" class="field__input" type="text" placeholder="enter your goal" value="$10.00">
+                                                    </div>
+                                                    <div class="field-group__field field">
+                                                        <svg class="field__icon field__icon--disabled field__icon--right icon icon--24">
+                                                            <use xlink:href="#arrow-down-24"/>
+                                                        </svg>
+                                                        <select class="field__input field__input--hide-control field__input--icon-right" name="some-name-2">
+                                                            <option selected value="USD">USD</option>
+                                                            <option value="RUB">RUB</option>
+                                                            <option value="UAN">UAN</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+
+                                                <div class="field-group__row field-group__row--inline">
+                                                    <div class="field-group__label">Default Amount</div>
+                                                    <label class="radio">
+                                                        <input class="radio__input" type="radio">
+                                                        <span class="radio__check"></span>
+                                                        <span class="radio__label">Match Checkout Setting</span>
+                                                    </label>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
                         </div>
                     </div>
+                    
+
                 </div>
 
             </main>

@@ -17,8 +17,18 @@
     }
 }
 
+.field__input--hide-control{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
 .field__input--icon-left {
     padding-left: 40px;
+}
+
+.field__input--icon-right {
+    padding-right: 30px;
 }
 
 .field__button {
@@ -33,7 +43,16 @@
     height: 18px;
     transform: translateY(-50%);
 }
-
+.field__icon--right{
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+}
 .field__button-icon {
     color: $input-icon-color;
+}
+
+.field__icon--disabled{
+    pointer-events: none;
 }
