@@ -1,7 +1,7 @@
 .option__bottom{
     display: flex;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding-top: 22px;
+    padding-bottom: 22px;
     @include media($md, max){
         padding: 16px;
     }
