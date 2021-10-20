@@ -1,0 +1,56 @@
+
+.nav{
+  @include theme-block;
+  border-radius: $main-border-radius;
+}
+
+.nav__list{
+  list-style-type: none;
+}
+
+.nav__item{
+  border-bottom: 1px solid $primary-border-color;
+  background-color: $primary-bg;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.nav__item:first-child {
+  border-radius: $main-border-radius $main-border-radius 0 0;
+}
+
+.nav__item:last-child {
+  border-bottom: 0;
+  border-radius: 0 0 $main-border-radius $main-border-radius;
+}
+
+.nav__item:first-child:last-child {
+  border-radius: $main-border-radius;
+}
+
+.nav__item:hover,
+.nav__item._active {
+  background-color: $main-active-bg;
+}
+
+.nav__link{
+  @include font(16px, 28px);
+  color: $main-color;
+  padding: 11px 16px;
+  text-decoration: none;
+  border-radius: inherit;
+  display: flex;
+  align-items: flex-start;
+}
+
+.nav__icon{
+  margin-right: 8px;
+  margin-top: 5px;
+  color: $main-color;
+}
+
+@include media($xs, max){
+  .nav--responsive .nav__link{
+    padding: 8px 16px;
+  }
+}

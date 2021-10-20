@@ -1,0 +1,27 @@
+.content__row{
+  display: flex;
+  margin-left: -#{$container-gutters / 2};
+  margin-right: -#{$container-gutters / 2};
+  @include media($md, max){
+    display: block;
+  }
+}
+
+.content__col{
+  padding-left: #{$container-gutters / 2};
+  padding-right: #{$container-gutters / 2};
+}
+
+.content__main{
+  width: 100%;
+}
+
+.content__sidebar{
+  width: 288px;
+  order: 1;
+  flex-shrink: 0;
+  margin-bottom: $container-gutters;
+  @include media($md, max){
+    width: 100%;
+  }
+}

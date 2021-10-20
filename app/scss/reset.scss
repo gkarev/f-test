@@ -5,6 +5,10 @@
     outline-color: $main-border-color;
 }
 
+button, [role="button"]{
+    outline-offset: 2px;
+}
+
 img{
     vertical-align: top;
 }

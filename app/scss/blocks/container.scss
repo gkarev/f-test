@@ -1,5 +1,5 @@
 .container {
-    max-width: $container-width;
+    max-width: $container-width + $container-gutters * 2;
     padding-left: $container-gutters;
     padding-right: $container-gutters;
     margin-left: auto;

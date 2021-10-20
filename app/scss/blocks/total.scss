@@ -1,0 +1,143 @@
+.total__top{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  @include media($xs, max){
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
+
+.total__info{
+  flex-shrink: 0;
+}
+
+.total__label{
+  display: flex;
+  align-items: center;
+  @include font(14px, 20px);
+  color: $main-color;
+  margin-bottom: 4px;
+}
+
+.total__icon{
+  margin-right: 8px;
+  color: $help-color;
+}
+
+.total__sum{
+  display: flex;
+  align-items: baseline;
+  @include font(24px, 32px);
+  color: $primary-color;
+  @include media($xs, max){
+    @include font(18px, 24px);
+    display: block;
+  }
+}
+
+.total__sum-convert{
+  @include font(16px, 24px);
+  color: $secondary-color;
+  margin-left: 8px;
+  @include media($xs, max){
+    @include font(12px, 16px);
+    margin-left: 0;
+  }
+}
+
+.total__id{
+  min-width: 100px;
+}
+
+.total__id-label{
+  @include font(16px, 20px, $ff: $help-font);
+  color: $help-mute-color;
+  margin-bottom: 4px;
+}
+
+.total__id-copy{
+  display: flex;
+  align-items: center;
+}
+
+.total__id-code{
+  @include font(16px, 24px, $ff: $help-font);
+  color: $main-color;
+  margin-right: 8px;
+  @include text-truncate;
+  max-width: 78px;
+}
+
+.total__id-button{
+  @include reset-btn;
+}
+
+.total__id-button-icon{
+  color: $secondary-color;
+  transition: color .2s ease;
+}
+
+.total__id-button._active .total__id-button-icon,
+.total__id-button:hover .total__id-button-icon{
+  color: $brand-color;
+}
+
+.total__bottom{
+  padding-bottom: 0;
+}
+
+.total__bar{
+  display: flex;
+  overflow-x: auto;
+  padding-bottom: 16px;
+}
+
+.total__bar-item{
+  padding-right: 32px;
+  padding-left: 32px;
+  flex-shrink: 0;
+  border-right: 1px solid $secondary-border-color;
+}
+
+.total__bar-item:first-child{
+  padding-left: 0;
+}
+
+.total__bar-item:last-child{
+  border: 0;
+}
+
+.total__bar-label{
+  margin-bottom: 1px;
+}
+
+.total__rank{
+  @include font(16px, 24px);
+  color: $main-color;
+}
+
+.total__rank--complete{
+  display: flex;
+  align-items: center;
+  color: $brand-color;
+}
+
+.total__rank-icon{
+  margin-right: 8px;
+  fill: $brand-color;
+}
+
+.total__rank-link{
+  @include font(16px, 24px);
+  display: inline-block;
+  vertical-align: top;
+  color: $link-color;
+  text-decoration: underline;
+  transition: opacity .2s ease;
+}
+
+.total__rank-link:hover{
+  opacity: .8;
+}
