@@ -1,4 +1,3 @@
-
 .nav{
   @include theme-block;
   border-radius: $main-border-radius;
@@ -53,4 +52,9 @@
   .nav--responsive .nav__link{
     padding: 8px 16px;
   }
+}
+
+.nav--sticky{
+  position: sticky;
+  top: $container-gutters;
 }

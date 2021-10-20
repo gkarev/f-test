@@ -62,3 +62,15 @@
     border: 0;
     clip: rect(0 0 0 0)
 }
+
+@mixin focus {
+    outline-offset: 2px;
+    outline: 2px solid $help-color;
+    border-radius: 2px;
+}
+
+@mixin focus-within {
+    &:focus-within{
+        @include focus;
+    }
+}

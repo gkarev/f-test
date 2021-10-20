@@ -1,0 +1,29 @@
+.option__bottom{
+    display: flex;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    @include media($md, max){
+        padding: 16px;
+    }
+}
+
+.option__button {
+  margin-right: 16px;
+  &:last-child{
+      margin-right: 0;
+  }
+
+  @include media($xxs, max){
+    padding: 8px;
+  }
+
+  @include media($md, max){
+    margin-right: 12px;
+    &:last-child{
+        margin-right: 0;
+    }
+  }
+
+
+  
+}

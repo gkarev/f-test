@@ -1,7 +1,4 @@
-.field-group{
-}
-
-.field-group__row{
+.field-group__row:not(:last-of-type){
   margin-bottom: 24px;
 }
 
@@ -44,6 +41,17 @@
   }
 }
 
+.field-group__row--group {
+  align-items: flex-start;
+}
+
+.field-group__collection > *:not(:last-child){
+  margin-bottom: 16px;
+}
+
+.field-group__collection .field-group__collection:not(:last-child) {
+  margin-bottom: 24px;
+}
 
 .field-group__row--grid .field-group__field:first-of-type{
   margin-right: $container-gutters;

@@ -20,6 +20,10 @@
     }
 }
 
+.card__bottom--alert{
+    background-color: $alert-bg;
+}
+
 .card--offset{
     margin-bottom: $container-gutters;
 }

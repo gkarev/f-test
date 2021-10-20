@@ -1,0 +1,29 @@
+.button{
+    @include reset-btn;
+    transition: opacity .2s ease;
+    border-radius: $main-border-radius;
+    border: 1px solid;
+    border-color: inherit;
+    @include font(16px, 24px);
+    text-align: center;
+    padding: 11px 23px;
+    @include text-truncate;
+    max-width: 160px;
+}
+
+.button:hover{
+    opacity: .8;
+}
+
+.button--brand{
+    background-color: $brand-bg;
+    border-color: $brand-color;
+    color: #fff;
+}
+
+.button--secondary-outline {
+    background-color: $primary-bg;
+    border-color: $main-border-color;
+    color: $main-color;
+}
+

@@ -2,11 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    outline-color: $main-border-color;
 }
 
-button, [role="button"]{
-    outline-offset: 2px;
+*:focus-visible{
+    @include focus;
 }
 
 img{

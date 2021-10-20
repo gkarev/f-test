@@ -11,10 +11,16 @@
     border-radius: $input-border-radius;
     transition: border-color 0.2s ease, background-color 0.2s ease;
     width: 100%;
+    letter-spacing: -.1px;
     @include placeholder {
         color: $input-placeholder-color;
         opacity: 1;
     }
+   
+}
+
+.field__input::-ms-expand {
+    display: none;
 }
 
 .field__input--hide-control{
@@ -31,7 +37,7 @@
     padding-right: 30px;
 }
 
-.field__button {
+.field__button { 
     @include reset-btn;
     position: absolute;
     top: 50%;

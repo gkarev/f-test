@@ -1,48 +1,47 @@
-.radio{
+.checkbox{
   display: flex;
   align-items: center;
   cursor: pointer;
   @include focus-within;
 }
 
-.radio__input{
+.checkbox__input{
   @include visually-hidden;
 }
 
-.radio__check{
+.checkbox__check{
   width: 22px;
   height: 22px;
   flex-shrink: 0;
-  border-radius: 50%;
+  border-radius: 4px;
   display: flex;
   align-items: center;
   justify-content: center;
   border: 1px solid $main-border-color;
   transition: box-shadow .2s ease, border-color .2s ease;
   margin-right: 12px;
-  &:after{
-    content: ' ';
-    width: 12px;
-    height: 12px;
+
+  &-icon{
     margin: auto;
+    color: $brand-color;
     flex-shrink: 0;
-    border-radius: 50%;
-    background-color: $brand-bg;
     transition: transform .2s ease, opacity .2s ease;
-    transform: scale(0);
+    transform: rotate(-45deg);
     opacity: 0;
   }
 }
-.radio__input:not([disabled]):checked ~ .radio__check{
+
+.checkbox__input:not([disabled]):checked ~ .checkbox__check{
   border-color: $brand-color;
   box-shadow: 0 0 0 1px $brand-color;
 }
-.radio__input:not([disabled]):checked ~ .radio__check:after{
-  transform: scale(1);
+.checkbox__input:not([disabled]):checked ~ .checkbox__check .checkbox__check-icon{
+  transform: rotate(0);
   opacity: 1;
 }
 
-.radio__label{
+.checkbox__label{
   @include font(16px, 24px);
   color: $main-color;
+  @include text-truncate;
 }
