@@ -10,8 +10,8 @@
 
 .range--inline .range__input{
     @include media($xs, max){
-         width: 0;
-    flex-grow: 1;
+        width: 0;
+        flex-grow: 1;
     }
    
 }
@@ -37,102 +37,92 @@
 }
 
 .range__input {
-    width: 100%;
-    flex-shrink: 0;
-    padding: 8px 0;
-    background-color: transparent;
     -webkit-appearance: none;
-    appearance: none;
-    overflow: hidden;
-}
-
-.range__input:focus {
-    @include focus;
 }
 
 .range__input::-webkit-slider-runnable-track {
-    background-color: $brand-bg;
-    border: 0;
-    width: 100%;
+    width: 300px;
     height: 3px;
-    border-radius: 1.5px;
-    cursor: pointer;
+    background: $range-track-bg;
+    border: none;
+    border-radius: 3px;
 }
 
 .range__input::-webkit-slider-thumb {
-    margin-top: -8px;
-    width: 19px;
-    height: 19px;
-    background-color: $brand-bg;
-    border: 0;
-    border-radius: 8.5px;
-    cursor: pointer;
     -webkit-appearance: none;
-    appearance: none;
+    border: none;
+    height: 19px;
+    width: 19px;
+    border-radius: 50%;
+    background: $brand-bg;
+    margin-top: -7px;
+}
+
+.range__input:focus {
+    outline: none;
 }
 
 .range__input:focus::-webkit-slider-runnable-track {
-    background-color: $brand-bg;
+    background: $range-track-active-bg;
 }
 
-.range__input::-moz-range__input-track {
-    background-color: $brand-bg;
-    border: 0;
+.range__input {
+    border: 1px solid #FFFFFF;
+    width: 100%;
+}
+
+.range__input::-moz-range-track {
     width: 100%;
     height: 3px;
-    cursor: pointer;
+    background: $range-track-bg;
+    border: none;
+    border-radius: 3px;
 }
 
-.range__input::-moz-range__input-thumb {
-    width: 19px;
+.range__input::-moz-range-thumb {
+    border: none;
     height: 19px;
-    background-color: $brand-bg;
-    border: 0;
-    border-radius: 8.5px;
-    cursor: pointer;
+    width: 19px;
+    border-radius: 50%;
+    background: $brand-bg;
 }
 
+.range__input:-moz-focusring {
+    outline: 1px solid #FFFFFF;
+    outline-offset: -1px;
+}
+
+.range__input:focus::-moz-range-track {
+    background: $range-track-active-bg;
+}
 .range__input::-ms-track {
-    background-color: transparent;
-    border-color: transparent;
-    border-width: 8px 0;
-    color: transparent;
     width: 100%;
     height: 3px;
-    cursor: pointer;
-}
+    background: transparent;
+    border-color: transparent;
+    border-width: 6px 0;
 
+    /*remove default tick marks*/
+    color: transparent;
+}
 .range__input::-ms-fill-lower {
-    background-color: $brand-bg;
-    border: 0;
+    background: $brand-bg;
+    border-radius: 10px;
 }
-
 .range__input::-ms-fill-upper {
-    background-color: $brand-bg;
-    border: 0;
+    background: $brand-bg;
+    border-radius: 10px;
 }
-
 .range__input::-ms-thumb {
-    width: 19px;
+    border: none;
     height: 19px;
-    background-color: $brand-bg;
-    border: 0;
-    border-radius: 8.5px;
-    cursor: pointer;
-    margin-top: 0px;
+    width: 19px;
+    border-radius: 50%;
+    background: $brand-bg;
 }
-
 .range__input:focus::-ms-fill-lower {
-    background-color: $brand-bg;
+    background: $brand-bg;
 }
-
 .range__input:focus::-ms-fill-upper {
-    background-color: $brand-bg;
+    background: $range-track-active-bg;
 }
-
-@supports (-ms-ime-align: auto) {
-    .range__input {
-        margin: 0;
-    }
-}
-
